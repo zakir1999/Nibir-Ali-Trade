@@ -4,27 +4,28 @@ class InfoCard extends StatelessWidget {
   const InfoCard({
     Key? key,
     required this.name,
-    required this.imageAssetPath,
+    required this.icon,
   }) : super(key: key);
   final String name;
-  final String imageAssetPath;
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Container(
-        width: 50,
-        height: 100,
-        child: Image.asset(
-          imageAssetPath,
+      leading: CircleAvatar(
+        backgroundColor: Colors.white24,
+        child: Icon(
+          icon,
           color: Colors.white,
-          fit: BoxFit.cover,
         ),
       ),
       title: Text(
         name,
         style: TextStyle(color: Colors.white),
       ),
+      onTap: () {
+        Navigator.pop(context);
+      },
     );
   }
 }

@@ -101,7 +101,7 @@ class HomePage extends StatelessWidget {
         ),
         backgroundColor: Colors.grey[200],
       ),
-      drawer: sidebar(),
+      drawer: Sidebar(),
       backgroundColor: Colors.grey[200],
       body: SafeArea(
         child: SingleChildScrollView(
