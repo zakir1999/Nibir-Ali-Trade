@@ -141,8 +141,8 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    width: 100,
-                    height: 100,
+                    width: 80,
+                    height: 80,
                     child: ClipOval(
                       child: Image.asset(
                         "images/Nabil.png",
@@ -162,7 +162,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    width: 20,
+                    width: 10,
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -183,15 +183,16 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
+
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Color.fromRGBO(0, 98, 98, 1),
                 ),
                 child: Container(
-                  padding: EdgeInsets.fromLTRB(12, 8, 12, 8),
+                  padding: EdgeInsets.fromLTRB(5, 3, 5, 3),
                   child: Text(
-                    "Update Your KYC",
+                    "Update KYC",
                     style: TextStyle(
                         fontStyle: FontStyle.italic,
                         color: Colors.white,
@@ -201,7 +202,8 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 10,),
+
           Obx(() => Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
